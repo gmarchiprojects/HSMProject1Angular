@@ -1,27 +1,20 @@
-# HSMProject1Angular
+Crie uma aplicação de agenda simples com as seguintes funcionalidades:
+- um componente-pai Agenda, sendo o primeiro a ser chamado pela aplicação;
+- um componente-filho Lista, sendo chamado pelo componente-pai Agenda;
+- o componente-filho Lista recebendo, como Input Property do componente-pai Agenda, um array de objetos. O tamanho fica a seu critério e cada objeto tem essa configuração:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+{
+id: 1,
+data: “00/00/0000”,
+tarefa: “Uma tarefa”,
+tipo: “IMPORTANTE, TRABALHO (exemplos)”,
+concluida: true ou false
+}
 
-## Development server
+- o template do componente-filho exibe os itens da Lista. Uma dica é usar a diretiva *ngFor e a interpolação de itens. Esse assunto será melhor visto no próximo conteúdo, mas é importante realizar a pesquisa sobre os mesmos para a realização da atividade;
+- cada item exibido no template do componente-filho deve conter um botão concluir tarefa que, ao ser clicado, deve emitir um evento para o componente-pai, o qual irá exibir um alerta no navegador indicando o id da atividade concluída. Nesse caso, a dica é usar o Output Property, o evento (click) de um botão e a função alert() do JavaScript;
+- o componente-pai Agenda deve, ao ser iniciado, exibir um alerta escrito: “AGENDA DE (insira seu nome aqui)”.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Você pode customizar a folha de estilos de sua aplicação como bem lhe agradar. É indicado que as dicas dadas sejam seguidas.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Suba o código do projeto para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
